@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="javascript">
+        function exam(form)
+        {
+            var i=0; 
+            if(form.one[1].checked)
+            i=i+5;
+            if(form.two[2].checked)
+            i=i+5;
+            if(form.three[0].checked)
+            i=i+5;
+            if(form.four[0].checked)
+            i=i+5;
+            if(form.five[3].checked)
+            i=i+5
+            window.alert("your score is" +i)
+            
+        }
+    </script>
+</head>
+<body>
+    <h1>Online  Exam</h1>
+    <form onSubmit="exam(this)">
+    <p>
+        <label>what is the color of apple?</label>
+        orange
+        <input type="radio" name="one"value="orange"></input>
+        red
+        <input type="radio" name="one" value="red"></input>
+        blue
+        <input type="radio" name="one" value="blue"></input>
+        green
+        <input type="radio" name="one" value="green"></input>
+       
+
+    </p>
+    
+
+    <p>
+        <label>what is the color of sky?</label>
+        orange
+        <input type="radio" name="two"value="orange"></input>
+        red
+        <input type="radio" name="two" value="red"></input>
+        blue
+        <input type="radio" name="two" value="blue"></input>
+        green
+        <input type="radio" name="two" value="green"></input>
+
+    </p>
+    <p>
+        <label>what is the color of eye?</label>
+        black
+        <input type="radio" name="three"value="black"></input>
+        red
+        <input type="radio" name="three" value="red"></input>
+        blue
+        <input type="radio" name="three" value="blue"></input>
+        green
+        <input type="radio" name="three" value="green"></input>
+
+    </p>
+    <p>
+        <label>what is the color of sun?</label>
+        orange
+        <input type="radio" name="four"value="orange"></input>
+        red
+        <input type="radio" name="four" value="red"></input>
+        blue
+        <input type="radio" name="four" value="blue"></input>
+        green
+        <input type="radio" name="four" value="green"></input>
+
+    </p>
+    <p>
+        <label>how many state in kerala?</label>
+        10
+        <input type="radio" name="five"value="10"></input>
+        12
+        <input type="radio" name="five" value="12"></input>
+        15
+        <input type="radio" name="five" value="15"></input>
+        14
+        <input type="radio" name="five" value="14"></input>
+
+    </p>
+
+
+    <input type="submit" value="submit">
+    <input type="reset" value="reset">
+</form>
+</body>
+</html>
