@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function REGISTRATION()
+        {
+            var name=document.getElementById("a");
+            var h=document.getElementById("b");
+            var i=document.getElementById("j")
+            var n=document.getElementById("c");
+            var s=document.getElementById("d");
+            var z=document.getElementById("e");
+            var x=document.getElementById("k");
+            var formValid=false;
+            if(name.value==""||name.value==null)
+            {
+                window.alert("Please enter the first name.");
+                return false;
+            }
+            if(j.value==""||j.value==null)
+            {
+                window.alert("please enter the second name");
+                return false;
+            }
+            if(b.value==""||b.value==null)
+            {
+                window.alert("Please enter the last name.");
+                return false;
+            }
+            if(!c.checked && !d.checked)
+            {
+                window.alert("Please enter your gender");
+
+            }
+            
+            
+            if(e.value==""||e.value==null)
+            {
+                window.alert("Please enter your number");
+                return false;
+            }
+            
+
+        }
+    </script>
+</head>
+<body bgcolor="cyan">
+	<h1>REGISTRATION FORM</H1>
+
+<form onsubmit="return REGISTRATION()">
+	<label>First Name</label>
+	<input type="text" name="first name" size=20 placeholder="First Name" id="a" ><br><br>
+
+	<label>Middle Name</label>
+	<input type="text" name="middle name" size=20 placeholder="Second Name"  id="j"><br><br>
+
+	<label>Last Name</label>
+	<input type="text" name="last name" size=20 placeholder="Last Name"id="b" ><br><br>
+
+	<label>phone</label>
+    <select id="k">
+	
+        <option value="Country">Country code</option>
+        <option value="india">IN-91</option>
+        <option value="usa">USA-81</option>	
+        <option value="Britten">BN-777</option>
+        <option value="Pak">PK-99</option>
+    </select>
+	<input type="text" name="phone" size=10 placeholder="number" id="e"><br><br>
+
+	
+	<label>Address</label>
+	<textarea cols=50 rows=5 name="Address" size=50 placeholder="Address"></textarea><br><br>
+    <label>gender</label>
+    <input type="radio" name="gender" value="male" id="c"> Male 
+    <input type="radio" name="gender" value="female" id="d"> Female
+	<br><label>Course</label>
+<select>
+	
+	<option value="course">course</option>
+	<option value="MCA">MCA</option>
+	<option value="MBA">MBA</option>	
+	<option value="BTECH">BTECH</option>
+	<option value="MTECH">MTECH</option>
+</select><br><br><br>
+
+
+	<label>email</label>
+	<input type="email" name="email" size=20 placeholder="email"/><br><br>
+
+	<label>password</label>
+	<input type="password" name="password" size=20 placeholder="password"/><br><br>
+
+
+	
+	<input type="submit" value= submit />
+
+	<input type="submit" value= cancel />
+
+	
+	
+	
+
+</form>
+    
+</body>
+</html>
