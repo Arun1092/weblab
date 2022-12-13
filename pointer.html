@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+   
+    <center>
+
+<div class="content" id="content">
+    
+<img src="D:\weblab\\images.jpg" id="a" width="850" height="400">
+<h1 id="b">point mouse here </h1>
+<h1 id="c">change image</h1>
+</div>
+<script>
+    document.getElementById("a").addEventListener("mouseover",change1);
+    document.getElementById("a").addEventListener("mouseout",change2);
+    function change1()
+    {
+        document.getElementById('a').src="images (1).jpg";
+        document.getElementById('b').style.display="none";
+        document.getElementById('c').style.display="block";
+
+    }
+    function change2()
+    {
+        document.getElementById('a').src="download.jpg";
+        document.getElementById('b').style.display="block";
+        document.getElementById('c').style.display="none";
+    }
+
+</script>
+</body>
+</html>
