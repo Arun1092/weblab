@@ -1,53 +1,154 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		function REGISTRATION(form)
+		{
+			var  fi=document.getElementById("a");
+			var  si=document.getElementById("b");
+			var  tr=document.getElementById("c");
+			var  ph=document.getElementById("d");
+			var  ad=document.getElementById("e");
+			var  ho=document.getElementById("k");
+			var  co=document.getElementById("f");
+			var  em=document.getElementById("g");
+			var  ps=document.getElementById("h");
+			var  su=document.getElementById("i");
+			var  ca=document.getElementById("j");
+			var formValid=false;
+			if(a.Value==""||a.value==null)
+			{
+				window.alert("please enter the name");
+				return false;
+			}
+			if(b.Value==""||b.value==null)
+			{
+				window.alert("please enter the name");
+				return false;
+			}
+			if(c.Value==""||c.value==null)
+			{
+				window.alert("please enter the name");
+				return false;
+			}
+			if(d.Value==""||d.value==null)
+			{
+				window.alert("please enter the name");
+				return false;
+			}
+			if(e.Value==""||e.value==null)
+			{
+				window.alert("please enter the name");
+				return false;
+			}
+			if(k.Value==""||k.value==null)
+			{
+				window.alert("please enter the name");
+				return false;
+			}
+			if(b.Value==""||b.value==null)
+			{
+				window.alert("please enter the name");
+				return false;
+			}
+			
+		
+		}
+
+	</script>
+</head>
+
+
 <body bgcolor="cyan">
+<center>
 	<h1>REGISTRATION FORM</H1>
+</center>
 
-<form>
-	<label>First Name</label>
-	<input type="text" name="first name" size=20 placeholder="First Name"/ ><br><br>
+<form onsubmit="return REGISTRATION()">
+<table>
+<tr>
 
-	<label>Middle Name</label>
-	<input type="text" name="middle name" size=20 placeholder="Second Name"/><br><br>
 
-	<label>Last Name</label>
-	<input type="text" name="last name" size=20 placeholder="Last Name"/><br><br>
+	<td><label>First Name</label></td>
 
-	<label>phone</label>
-	<input type="text" name="phone" size=5 placeholder="country code"/>
-	<input type="text" name="phone" size=10 placeholder="number"/><br><br>
+
+
+	<td><input type="text" name="first name" size=20 placeholder="First Name" id="a" /></td>
 
 	
-	<label>Address</label>
-	<textarea cols=50 rows=5 name="Address" size=50 placeholder="Address"></textarea><br><br>
+</tr>
+<tr>
+	<td><label>Middle Name</label></td>
+	<td><input type="text" name="middle name" size=20 placeholder="Second Name" id="b"/></td>
+</tr>
+<tr>
+	<td><label>Last Name</label></td>
+	<td><input type="text" name="last name" size=20 placeholder="Last Name" id="c"/></td>
+</tr>
+<tr>
 
-	<label>Course</label>
-<select>
+	<td><label>Course</label></td>
+	<td><select id="f">
 	
 	<option value="course">course</option>
 	<option value="MCA">MCA</option>
 	<option value="MBA">MBA</option>	
 	<option value="BTECH">BTECH</option>
 	<option value="MTECH">MTECH</option>
-</select><br><br><br>
+	</select></td><br><br><br>
+</tr>
+<tr>
+	<td><label>Gender</label></td>
+	<td><input type="radio" name="gender" value="male">male
+	<input type="radio" name="gender" value="female">female </td><br><br>
+</tr>
+<tr>
 
-
-	<label>email</label>
-	<input type="email" name="email" size=20 placeholder="email"/><br><br>
-
-	<label>password</label>
-	<input type="password" name="password" size=20 placeholder="password"/><br><br>
-
+	<td><label>phone</label></td>
+	<td><input type="text" name="phone" size=5 placeholder="country code" />
+	<input type="text" name="phone" size=10 placeholder="number" id="d" /><br><br></td>
+</tr>
+<tr>
 
 	
-	<input type="button" value= submit />
+	<td><label>Address</label></td>
+	<td><textarea cols=50 rows=5 name="Address" size=50 placeholder="Address" id="e"></textarea></td>
+</tr>
+<tr>
+	<td><label>Hobbies</label></td>
+	<td><input type="checkbox" id="k">reading
+	<input type="checkbox" id="k">playing
+	<input type="checkbox" id="k">travelling</td>
+</tr>
 
-	<input type="button" value= cancel />
+<tr>
 
+
+	<td><label>email</label></td>
+	<td><input type="email" name="email" size=20 placeholder="email" id="g"/></td>
+</tr>
+<tr>
+
+	<td><label>password</label><td>
+	<input type="password" name="password" size=20 placeholder="password" id="h"/>
+
+</tr>
+<tr>
 	
+	<td><input type="submit" value= submit id="i" /></td>
+
+	<td><input type="button" value= cancel  id="j"/></td>
+<tr>
 	
+</table>	
 	
 
 </form>
+
 </body>
 
 </html>
